@@ -2,9 +2,12 @@
   "name": "Trello",
   "version": "1.0.0",
   "main": "index.js",
+  "homepage": "https://Vladislav-Proshchenkov.github.io/Trello",
   "scripts": {
     "start": "webpack serve --open",
     "build": "webpack --mode production",
+    "build:dev": "webpack --mode development",
+    "predeploy": "yarn build",
     "deploy": "gh-pages -d dist"
   },
   "license": "MIT",
